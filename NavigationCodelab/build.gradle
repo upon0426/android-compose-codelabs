@@ -20,6 +20,10 @@ buildscript {
         mavenCentral()
     }
 
+    ext {
+        composeNavigationVersion = '2.6.0-alpha04'
+    }
+
     dependencies {
         classpath "com.android.tools.build:gradle:7.3.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20"

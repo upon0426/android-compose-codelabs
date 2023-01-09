@@ -79,6 +79,7 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.navigation:navigation-testing:2.5.3'
     def composeBom = platform('androidx.compose:compose-bom:2022.12.00')
     implementation(composeBom)
     androidTestImplementation(composeBom)
@@ -95,6 +96,9 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended"
     implementation "androidx.activity:activity-compose:1.6.1"
     debugImplementation "androidx.compose.ui:ui-tooling"
+
+    // Navigation dependencies
+    implementation "androidx.navigation:navigation-compose:$composeNavigationVersion"
 
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
